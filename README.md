@@ -60,7 +60,7 @@ The plugin will be automatically discovered by Pelican Panel. Navigate to a serv
 
 ## Requirements
 
-- Pelican Panel with plugin support (`panel_version >= 1.0.0-beta1`)
+- Pelican Panel v1.0.0-beta30 or later (plugin system required)
 - PHP 8.1+
 - Laravel with Filament
 
