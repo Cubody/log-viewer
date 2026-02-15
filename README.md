@@ -2,6 +2,8 @@
 
 A plugin for [Pelican Panel](https://pelican.dev) (Filament) that lets you browse and search server log files directly from the admin panel with syntax highlighting, level filtering, and real-time updates.
 
+<img width="2560" height="1400" alt="изображение" src="https://github.com/user-attachments/assets/2999f4a4-9d68-4e3c-9baa-b8bcbc31c4ae" />
+
 ## Features
 
 - View server log files (`.log`, `.log.gz`, `.log.1`, `.log.2`, `.log.3`)
