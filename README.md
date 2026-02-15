@@ -14,10 +14,18 @@ A plugin for [Pelican Panel](https://pelican.dev) (Filament) that lets you brows
 
 ## Installation
 
-### Option 1: Download Release
+### Option 1: Direct URL (Pelican Panel)
+
+Use this URL in the Pelican Panel plugin installer:
+
+```
+https://github.com/Cubody/log-viewer/releases/download/v1.0.0/log-viewer.zip
+```
+
+### Option 2: Download Release
 
 1. Go to the [Releases](../../releases) page
-2. Download the latest version archive (`log-viewer-v1.0.0.zip`)
+2. Download `log-viewer.zip`
 3. Extract the contents into your Pelican Panel plugins directory:
    ```
    /path/to/pelican/plugins/log-viewer/
@@ -35,7 +43,7 @@ A plugin for [Pelican Panel](https://pelican.dev) (Filament) that lets you brows
            └── log-viewer.js
    ```
 
-### Option 2: Clone the Repository
+### Option 3: Clone the Repository
 
 ```bash
 cd /path/to/pelican/plugins/
