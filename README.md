@@ -12,7 +12,9 @@ A plugin for [Pelican Panel](https://pelican.dev) (Filament) that lets you brows
 - Full-text search across log contents
 - Virtualized scrolling for large files (up to 5 MB)
 - Auto-refresh via polling every 5 seconds
-- Stack trace detection with error level inheritance
+- Stack trace detection with error level inheritance (Java stack traces only)
+
+> **Note:** This plugin was originally built for [Hytale](https://hytale.com) server log structure as part of the [Rutale](https://rutale.gg) server network. Stack trace detection currently supports Java-style traces only (`at ...`, `Caused by:`, `... N more`). Other languages (Python, PHP, Node.js, etc.) are not yet supported.
 
 ## Installation
 
