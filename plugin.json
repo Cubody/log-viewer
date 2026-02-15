@@ -1,0 +1,18 @@
+{
+    "id": "log-viewer",
+    "name": "Log Viewer",
+    "author": "Rutale",
+    "version": "1.0.0",
+    "description": "Browse and search server log files by date with syntax highlighting",
+    "category": "plugin",
+    "namespace": "Rutale\\LogViewer",
+    "class": "LogViewerPlugin",
+    "panels": [
+        "server"
+    ],
+    "panel_version": "^1.0.0-beta1",
+    "meta": {
+        "status": "enabled",
+        "status_message": null
+    }
+}
