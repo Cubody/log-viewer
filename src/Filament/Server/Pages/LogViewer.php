@@ -71,6 +71,9 @@ class LogViewer extends Page implements HasForms
     {
         if (empty($this->selectedFile)) return [];
 
+        $allowedPaths = array_column($this->logFiles, 'path');
+        if (!in_array($this->selectedFile, $allowedPaths, true)) return [];
+
         try {
             $server = filament()->getTenant();
             $fileRepository = app(DaemonFileRepository::class)->setServer($server);
@@ -160,6 +163,7 @@ class LogViewer extends Page implements HasForms
 
             $rootFiles = $fileRepository->getDirectory('/');
             foreach ($rootFiles as $file) {
+                if (!is_array($file)) continue;
                 if ($this->isLogFile($file)) {
                     $this->logFiles[] = [
                         'name' => $file['name'],
@@ -174,6 +178,7 @@ class LogViewer extends Page implements HasForms
             try {
                 $logDirFiles = $fileRepository->getDirectory('/logs');
                 foreach ($logDirFiles as $file) {
+                    if (!is_array($file)) continue;
                     if ($this->isLogFile($file)) {
                         $this->logFiles[] = [
                             'name' => 'logs/' . $file['name'],
